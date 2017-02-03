@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/App.css';
+import Profile from './components/Profile.js';
+import Nav from './components/Nav.js';
+import Header from './components/Header.js';
+import Toggle from './components/Toggle.js';
+
+import TalkingMachine from './components/talking-machine.js';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
+        <Nav/>
+        <Header/>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Testing testing..
         </p>
+        <Profile name="Steinar"/>
+        <TalkingMachine />
+        <Toggle />
       </div>
     );
   }
