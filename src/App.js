@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './assets/css/App.css';
-import Profile from './components/Profile.js';
 import Nav from './components/Nav.js';
 import Header from './components/Header.js';
+import TwitterView from './components/twitter/TwitterView.js';
 
 class App extends Component {
   render() {
@@ -10,6 +10,7 @@ class App extends Component {
       <div className="App">
         <Nav/>
         <Header/>
+        <TwitterView />
 
       </div>
     );
