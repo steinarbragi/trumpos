@@ -1,7 +1,7 @@
 import React from 'react';
 
 var greetings = ['hello ','Good morning, ','The sun is shining again today thanks to me, ', 'What\'s the deal with the fact that, '];
-var subjects = ['lying liberal media. ','obamacare is a disaster. ', 'these trade deals are a disaster. ','mexico is taking our jobs. '];
+var subjects = ['liberal media is lying. ','obamacare is a disaster. ', 'these trade deals are a disaster. ','mexico is taking our jobs. '];
 var exclamations = ['SAD!','FAKE NEWS','DISHONEST','MAKE AMERICA GREAT AGAIN'];
 
 function getRandomInt(min, max) {
