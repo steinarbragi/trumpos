@@ -9,15 +9,14 @@ function getRandomInt(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min;
 }
-var sentence = '';
 var TweetGenerator = React.createClass({
   getInitialState: function () {
     return {sentence: ''};
   },
 
   randomSentence: function()  {
-    var newSentece = greetings[getRandomInt(0,4)] + subjects[getRandomInt(0,4)] + exclamations[getRandomInt(0,4)];
-    this.setState({ sentence: newSentece});
+    var newSentence = greetings[getRandomInt(0,4)] + subjects[getRandomInt(0,4)] + exclamations[getRandomInt(0,4)];
+    this.setState({ sentence: newSentence});
   },
   render: function () {
     return (
