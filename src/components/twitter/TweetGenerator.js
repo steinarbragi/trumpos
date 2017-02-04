@@ -1,6 +1,8 @@
 import React from 'react';
 
-var words = ['hæ ','ég ', 'heiti ', 'steinar '];
+var intros = ['hello ','Good morning, ','The sun is shining again today thanks to me, ', 'What\'s the deal with the fact that, '];
+var subjects = ['lying liberal media. ','obamacare is a disaster. ', 'these trade deals are a disaster. ','mexico is taking our jobs. '];
+var exclamations = ['SAD!','FAKE NEWS','DISHONEST','MAKE AMERICA GREAT AGAIN'];
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -14,7 +16,7 @@ var TweetGenerator = React.createClass({
   },
 
   sayRandomWord: function()  {
-    var newSentece = this.state.sentence + words[getRandomInt(0,4)];
+    var newSentece = intros[getRandomInt(0,4)] + subjects[getRandomInt(0,4)] + exclamations[getRandomInt(0,4)];
     this.setState({ sentence: newSentece});
   },
   render: function () {

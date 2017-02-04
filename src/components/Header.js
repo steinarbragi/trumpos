@@ -6,7 +6,8 @@ var Header = React.createClass({
   render: function () {
     return (
       <div className="App-header">
-        <h1>22:49</h1>
+        <h1>11:54</h1>
+        <h2>TrumpOS</h2>
       </div>
     );
   }
