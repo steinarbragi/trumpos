@@ -1,5 +1,5 @@
 import React from 'react';
-import trumpFace from '../../assets/trump.jpg';
+import trumpFace from '../../assets/img/trump.jpg';
 import  '../../assets/css/Tweet.css';
 
 var Tweet = React.createClass({
