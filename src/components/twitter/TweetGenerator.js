@@ -17,13 +17,13 @@ var TweetGenerator = React.createClass({
 
   randomSentence: function()  {
     var newSentence = greetings[getRandomInt(0,3)] + subjects[getRandomInt(0,4)] + exclamations[getRandomInt(0,4)];
-    this.setState({ sentences: this.state.sentences.concat([newSentence])});
+    this.setState({ sentences: [newSentence].concat(this.state.sentences)});
   },
   render: function () {
     return (
       <div>
         <button onClick={this.randomSentence}>TWEET</button>
-        {this.state.sentences.reverse().map(sentence => (
+        {this.state.sentences.map(sentence => (
           <Tweet key={sentence} tweet={sentence} />
         ))}
       </div>
