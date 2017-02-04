@@ -12,7 +12,6 @@ var Profile = React.createClass({
     return (
         <div>
           <h1>{this.props.name} {num}</h1>
-          <Screamer />
         </div>
 
     );
