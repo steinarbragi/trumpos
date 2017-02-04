@@ -1,5 +1,7 @@
 import React from 'react';
 import Tweet from './Tweet.js';
+import  '../../assets/css/Tweet.css';
+
 
 var greetings = ['hello ','Good morning, ','The sun is shining again today thanks to me, '];
 var subjects = ['liberal media is lying. ','obamacare is a disaster. ', 'these trade deals are a disaster. ','mexico is taking our jobs. '];
@@ -22,7 +24,7 @@ var TweetGenerator = React.createClass({
   render: function () {
     return (
       <div>
-        <button onClick={this.randomSentence}>TWEET</button>
+        <button className="twitterbutton" onClick={this.randomSentence}>TWEET</button>
         {this.state.sentences.map(sentence => (
           <Tweet key={sentence} tweet={sentence} />
         ))}
