@@ -1,6 +1,5 @@
 import React from 'react';
 import TweetGenerator from './TweetGenerator.js';
-import Tweet from './Tweet.js';
 
 
 var TwitterView = React.createClass({

@@ -12,7 +12,7 @@ var Tweet = React.createClass({
           </div>
       );
     }
-    else return <div></div>;
+    else return null;
   }
 });
 
