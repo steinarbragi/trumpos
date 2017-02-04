@@ -1,0 +1,30 @@
+.tweet {
+  min-height: 50px;
+  width: 90%;
+  margin: 30px auto;
+  border-bottom: 1px solid silver;
+}
+
+.tweet img.trumpProfile {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.tweet {
+  align:left;
+  text-align: left;
+}
+.tweet p {
+  margin-left: 60px;
+}
+.tweet .realName {
+  font-weight: bold;
+  text-align: left;
+  align:left;
+  margin-left: 5px;
+}
+.tweet .userName {
+  color: silver;
+  margin-left: 5px;
+  font-size: 0.8em;
+}

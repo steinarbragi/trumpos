@@ -23,7 +23,7 @@ var TweetGenerator = React.createClass({
     return (
       <div>
         <button onClick={this.randomSentence}>TWEET</button>
-        {this.state.sentences.map(sentence => (
+        {this.state.sentences.reverse().map(sentence => (
           <Tweet key={sentence} tweet={sentence} />
         ))}
       </div>
