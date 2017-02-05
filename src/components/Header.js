@@ -1,6 +1,6 @@
 import React from 'react';
 import Clock from './Clock.js';
-import TrumpCover from '../assets/img/trumpcover.jpg';
+import TrumpCover from '../assets/img/trumpAppCover.jpg';
 
 var Header = React.createClass({
   render: function () {
