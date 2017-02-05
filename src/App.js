@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './assets/css/App.css';
-import Nav from './components/Nav.js';
 import Header from './components/Header.js';
 import TwitterView from './components/twitter/TwitterView.js';
 
