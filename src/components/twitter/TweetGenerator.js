@@ -36,7 +36,12 @@ function getRandomInt(min, max) {
 }
 var TweetGenerator = React.createClass({
   getInitialState: function () {
-    return {sentences: []};
+    var sentenceArr = [];
+    for (var i = 0; i<5; i++) {
+      var newSentence = greetings[getRandomInt(0,4)] + subjects[getRandomInt(0,9)] + exclamations[getRandomInt(0,6)];
+      sentenceArr = sentenceArr.concat([newSentence]);
+    }
+    return {sentences: sentenceArr};
   },
 
   randomSentence: function()  {
