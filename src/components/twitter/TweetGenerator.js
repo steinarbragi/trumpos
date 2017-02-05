@@ -23,7 +23,7 @@ var subjects = [
 var exclamations = [
   'SAD!',
   'FAKE NEWS',
-  '#FAKENEWS'
+  '#FAKENEWS',
   '#DISHONEST',
   'MAKE AMERICA GREAT AGAIN',
   '#MAGA'
