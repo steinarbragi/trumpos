@@ -11,6 +11,11 @@ var Tweet = React.createClass({
             <span className="realName">Donald J. Trump</span>
             <span className="userName">@theRealDonaldTrump</span>
             <p>{this.props.tweet}</p>
+            <div className="tweetActions">
+              <i className="fa fa-reply" aria-hidden="true"></i>
+              <i className="fa fa-retweet" aria-hidden="true"></i>
+              <i className="fa fa-heart" aria-hidden="true"></i>
+            </div>
           </div>
       );
     }
