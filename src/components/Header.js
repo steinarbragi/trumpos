@@ -6,7 +6,7 @@ var Header = React.createClass({
   render: function () {
     return (
       <div style={{background:'url('+TrumpCover+')center center',backgroundSize:'cover'}} className="App-header">
-        <h1 style={{margin:'70px 0px'}}>Trump's random tweet generator</h1>
+        <h1>Trump's random tweet generator</h1>
       </div>
     );
   }
