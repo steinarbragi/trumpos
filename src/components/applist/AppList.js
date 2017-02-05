@@ -1,11 +1,12 @@
 import React from 'react';
-import App from './AppLauncher.js';
+import AppLauncher from './AppLauncher.js';
+import TwitterAppIcon from '../../assets/img/apps/twitterAppIcon.png'
 
-var Applist = React.createClass({
+var AppList = React.createClass({
   render: function () {
     return (
       <div className="AppList">
-        <AppLauncher name="twitter" icon="icon" view="TwitterView" />
+        <AppLauncher name="Twitter" image={TwitterAppIcon} view="TwitterView" />
       </div>
     );
   }
