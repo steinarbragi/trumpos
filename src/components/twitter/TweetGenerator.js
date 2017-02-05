@@ -40,7 +40,7 @@ var TweetGenerator = React.createClass({
   },
 
   randomSentence: function()  {
-    var newSentence = subjects[getRandomInt(0,4)] + exclamations[getRandomInt(0,4)];
+    var newSentence = greetings[getRandomInt(0,4)] + subjects[getRandomInt(0,8)] + exclamations[getRandomInt(0,5)];
     this.setState({ sentences: [newSentence].concat(this.state.sentences)});
   },
   render: function () {
