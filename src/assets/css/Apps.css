@@ -12,7 +12,7 @@
 
 /* Dock */
 
-.AppDock .AppLauncher p {
+.AppDock .AppLauncher p, .AppGrid .AppLauncher p {
   margin-bottom: 5px;
   font-size: 1em;
   color: white;
@@ -47,7 +47,7 @@
 
 .AppGrid {
   width: 100%;
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: left;
 
