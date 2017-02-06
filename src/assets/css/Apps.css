@@ -1,0 +1,61 @@
+/* App icon launcher */
+
+.AppLauncher img {
+  width: 60px;
+}
+.AppLauncher p {
+  margin-top: 0px;
+}
+.AppLauncher {
+  margin: 0 auto
+}
+
+/* Dock */
+
+.AppDock .AppLauncher p, .AppGrid .AppLauncher p {
+  margin-bottom: 5px;
+  font-size: 1em;
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.AppDock .AppLauncher {
+  display: inline-block;
+  margin: 0px 10px 0px 10px;
+}
+
+.AppDock {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(to top, rgba(112,128,144, 1), rgba(112,128,144, 0.4));
+  backdrop-filter: blur(10px);
+  padding-top: 5px;
+  border-top: 1px solid #aaa;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+}
+
+
+/* App gridview */
+
+.AppGrid {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+
+}
+
+.AppGrid .AppLauncher {
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 20px;
+  text-align: center;
+}
