@@ -21,7 +21,8 @@ class App extends Component {
     this.state = {
       view: 'TwitterView',
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.setView = this.setView.bind(this);
+    this.handleRedirect = this.handleRedirect.bind(this);
 
   }
 
