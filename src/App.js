@@ -6,7 +6,8 @@ import AppDock from './components/os/AppDock.js';
 import AppGrid from './components/os/AppGrid.js';
 import TwitterAppIcon from './assets/img/apps/twitterAppIcon.png';
 import EtsyAppIcon from './assets/img/apps/etsyAppIcon.png';
-import HomeAppIcon from './assets/img/apps/home.png';
+import HomeAppIcon from './assets/img/apps/homeIcon.png';
+import BlogAppIcon from './assets/img/apps/blogAppIcon.png';
 import Wallpaper from './assets/img/trumpWallpaper.jpg';
 
 const appGridStyle = {
@@ -19,7 +20,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      view: 'TwitterView',
+      view: 'AppGrid',
     };
     this.setView = this.setView.bind(this);
     this.handleRedirect = this.handleRedirect.bind(this);
@@ -39,6 +40,7 @@ class App extends Component {
           <AppGrid>
               <AppLauncher onAppClick={e => this.setView(e, 'TwitterView')} name="TrumpTweet" image={TwitterAppIcon} />
               <AppLauncher onAppClick={e => this.handleRedirect(e, 'https://www.etsy.com/listing/291408839/the-donald-trump-print-various-sizes?ref=hp_rv')} name="Buy Poster" image={EtsyAppIcon} />
+              <AppLauncher onAppClick={e => this.handleRedirect(e, 'http://steinar.io')} name="Dev Blog" image={BlogAppIcon} />
           </AppGrid>
           <AppDock>
             <AppLauncher onAppClick={e => this.setView(e, 'TwitterView')} name="TrumpTweet" image={TwitterAppIcon} />
